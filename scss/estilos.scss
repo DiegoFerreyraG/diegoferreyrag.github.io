@@ -2,14 +2,28 @@ html{
     font-size: 15px;
 }
 /*Estilos bloque bienvenidos*/
+
 .bienvenidos{
-    background: url(../images/fondo-bienvenidos.jpg);
+    background: url(../images/f4xs.jpg);
     background-size: cover;
     height: 100vh;//100% de la altura pantalla
     overflow: hidden;
 }
+.bienvenidos h1{
+    font-family: "Homer Simpson", cursive;
+}
+
+.avatar {
+
+    background-repeat: no-repeat;
+    background-position: 10%;
+    border-radius: 20%;
+    background-size: 100% auto;
+}
+
+
 .navbar-fixed-top{
-    background: rgba(0,0,0,0.60);
+    background: rgba(0,0,0,0.70);
 }
 .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover, .navbar-light .navbar-toggler:focus, .navbar-light .navbar-toggler:hover {
     color: #ddd;
@@ -33,18 +47,18 @@ html{
 }
 .navbar-light .navbar-nav .open > .nav-link, .navbar-light .navbar-nav .open > .nav-link:focus, .navbar-light .navbar-nav .open > .nav-link:hover, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .active > .nav-link:focus, .navbar-light .navbar-nav .active > .nav-link:hover, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .nav-link.open:focus, .navbar-light .navbar-nav .nav-link.open:hover, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.active:focus, .navbar-light .navbar-nav .nav-link.active:hover {
     color: #eee;
-    background: #F05F40;
+    background: #0040FF;
 }
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
     color: #ddd;
-    background: #F05F40;
+    background: #0040FF;
 }
 
 
 #menuPrincipal{
     clear:both;
 }
-.texto-bienvenido{
+.general{ // era texto-bienvenido
     color:white;
     margin-top: 8rem
 }
@@ -60,21 +74,98 @@ html{
     border-color: #014279;
 }
 /*ESTILOS BLOQUE QUIENES SOMOS*/
-.quienes-somos{
-    background: #0062FF;
-    color: #fff;
+.formacion{//esto era quienes-somos
+    color: black;
 }
-/*ESTILOS BLOQUE NUESTROS SERVICIOS*/
-.servicios .row div{
+
+.fecha{
+    font-size: 1.2rem;
+    color:blue;
+
+}
+.lugar{
+    font-size: .9rem;
+    color:#0B0B61;
+    font-weight: bold;
+}
+.modal-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    font-family: "Courier New", cursive;
+}
+
+.itm{
+    font-family: "Palatino Linotype",cursive;
+    font-weight: bold;
+    color: #8A0808;
+    font-size: 1.4rem;
+}
+.isc{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #8A0808;
+    font-family: "Courier New", cursive;
+}
+.IS{
+    font-family: "Palatino Linotype",cursive;
+    color: #black;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.semestre{
+    font-family: "Palatino Linotype",cursive;
+    color: #A4A4A4;
+    font-size: 1.2rem;
     
+}
+.prepa{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #0404B4;
+    font-family: "Courier New", cursive;
+}
+/*ESTILOS BLOQUE habilidaddes*/
+.habilidaddes {
+    background: rgb(242, 241, 255);
+
 }
 .servicios .fa{
     color:#0000FF;
     font-size: 6rem;
 }
-.servicios h3{
+.habilidaddes h3{
     font-weight: bold;
 }
+
+
+.carousel-control.left {
+    background-image: -webkit-linear-gradient(left, rgb(255, 0, 0) 0%, rgb(242, 241, 255) 100%);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgb(242, 241, 255) 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+}
+.carousel-control.right {
+    right: 0;
+    left: auto;
+    background-image: -webkit-linear-gradient(left, rgb(255, 0, 0) 0%, rgb(242, 241, 255) 100%);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgb(242, 241, 255) 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+}
+.carousel-control {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0);
+    opacity: 0.2;
+}
+
 /*ESTILOS BLOQUE ultimos proyectos*/
 .ultimos-proyectos{
     background: #343635;
@@ -97,7 +188,6 @@ html{
 .footer{
     color:#fff;
     background: #222222;
-
 }
 /*Empiezan los mediaqueries*/
 @media (min-width: 768px){
@@ -108,7 +198,7 @@ html{
         clear: inherit;
     }
     .bienvenidos{
-        background: url(../images/fondo-bienvenido-grande.jpg);
+        background: url(../images/f4.jpg);
         background-size: cover;
     }
 }
